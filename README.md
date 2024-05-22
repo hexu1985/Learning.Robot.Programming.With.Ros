@@ -33,6 +33,10 @@ $ git clone https://github.com/wsnewman/learning_ros_external_packages.git
 
     ```
     $ sudo apt update && sudo apt install dpkg
+    # Ubuntu 20.04
+    $ sudo apt install ros-noetic-desktop-full
+
+    # Ubuntu 18.04
     $ sudo apt install ros-melodic-desktop-full
     ```
 
