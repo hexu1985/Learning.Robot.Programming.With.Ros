@@ -1,5 +1,18 @@
 
-1. rosdep init失败 
+### rosdep init找不到命令
+    - Ubuntu20.04下报错：
+        ```
+        $ sudo rosdep init
+        sudo: rosdep：找不到命令
+        ```
+
+    - 解决方法
+        
+        ```
+        $ sudo apt install python3-rosdep
+        ```
+
+### rosdep init失败 
     - 报错信息
         ```
         $ sudo rosdep init
@@ -14,7 +27,7 @@
             185.199.110.133 raw.githubusercontent.com
             ```
 
-2. rosdep init失败 
+### rosdep init失败 
     - 报错信息
         ```
         $ sudo rosdep init
@@ -28,3 +41,29 @@
         ```
         $ sudo rm /etc/ros/rosdep/sources.list.d/20-default.list
         ```
+
+### roscore找不到roslaunch
+
+    - 报错信息
+        ```
+        $ roscore 
+        ... logging to /home/hexu/.ros/log/4d7a949c-18d0-11ef-8c7c-c761de3c9ca8/roslaunch-hexu-XPS-13-9360-5237.log
+        Checking log directory for disk usage. This may take awhile.
+        Press Ctrl-C to interrupt
+        Done checking log file disk usage. Usage is <1GB.
+        
+        Resource not found: roslaunch
+        ROS path [0]=/opt/ros/noetic/share/ros
+        ROS path [1]=/home/hexu/git/Learning.Robot.Programming.With.Ros/chapter-01/recipe-01/ros_ws/src
+        ROS path [2]=/opt/ros/noetic/share
+        The traceback for the exception was written to the log file
+        ```
+
+    - 解决方法
+
+        ```
+        $ sudo apt install ros-noetic-roslaunch
+        ```
+
+### rosrun命令不存在
+
