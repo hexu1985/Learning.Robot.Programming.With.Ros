@@ -1,1 +1,4 @@
 catkin_simple/
+learning_ros_external_packages/
+build/
+devel
